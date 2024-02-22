@@ -129,7 +129,7 @@
                             </div>
                             <p
                                 class="bg-[#1DD10026] text-[#1DD100] p-4 rounded-xl w-[180px] inter-font text-xl font-medium">
-                                <i class="fa-solid fa-chair"></i> <span>40</span> seats left
+                                <i class="fa-solid fa-chair"></i> <span id="all-seat">40</span> seats left
                             </p>
                         </div>
                         <div class="bg-[#F7F8F8] rounded-xl p-8 w-[770px] h-[258px] mt-6 ml-8">
@@ -164,24 +164,27 @@
                         <div class="flex justify-center pb-5">
                             <img src="images/fare.png" alt="">
                         </div>
-                        <h1 class="raleway-font text-3xl font-bold text-center">550 Taka</h1>
+                        <h1 class="raleway-font text-3xl font-bold text-center"> <span id
+                            five>550</span>Taka</h1>
                         <p class="raleway-font text-2xl font-semibold text-center text-[#03071299]">per seat</p>
                     </div>
                 </div>
             </section>
 
             <!-- select  your seat -->
-            <section class="w-[1170px] hidden flex bg-white mt-6 mx-auto rounded-xl">
+            <section id="select" class="w-[1170px] flex bg-white mt-6 mx-auto rounded-xl">
                 <div class="w-[694px]">
                     <div>
-                        <h1 class="raleway-font text-[#030712] text-2xl font-semibold p-8">Select Your Seat</h1>
+                        <h1 class="raleway-font text-[rgb(3,7,18)] text-2xl font-semibold p-8">Select Your Seat</h1>
                         <hr class="w-[625px] mx-auto">
                         <div class="flex justify-between px-8 py-4">
-                            <div>
-                                <p class="inter-font text-xl font-medium text-[#0307127F]">Available</p>
+                            <div class="">
+                                <h1 class="inter-font text-xl font-medium text-[#0307127F]"> <i
+                                        class="fa-solid fa-chair mr-2"></i>Available</h1>
                             </div>
                             <div>
-                                <p class="inter-font text-xl font-medium text-[#1DD100]">Selected</p>
+                                <h1 class="inter-font text-xl font-medium text-[#1DD100]"> <i
+                                        class="fa-solid fa-chair mr-2"></i>Selected</h1>
                             </div>
                         </div>
                         <hr class="w-[625px] mx-auto">
@@ -193,21 +196,21 @@
                                     </div>
                                     <div class="">
                                         <button
-                                            class="btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">A1</button>
+                                            class="add-btn btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">A1</button>
                                     </div>
                                     <div class="">
                                         <button
-                                            class="btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">A2</button>
+                                            class="add-btn btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">A2</button>
                                     </div>
                                 </div>
                                 <div class="flex gap-8">
                                     <div class="">
                                         <button
-                                            class="btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">A3</button>
+                                            class="add-btn btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">A3</button>
                                     </div>
                                     <div class="">
                                         <button
-                                            class="btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">A4</button>
+                                            class="add-btn btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">A4</button>
                                     </div>
                                 </div>
                             </div>
@@ -218,21 +221,21 @@
                                     </div>
                                     <div class="">
                                         <button
-                                            class="btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">B1</button>
+                                            class="add-btn btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">B1</button>
                                     </div>
                                     <div class="">
                                         <button
-                                            class="btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">B2</button>
+                                            class="add-btn btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">B2</button>
                                     </div>
                                 </div>
                                 <div class="flex gap-8">
                                     <div class="">
                                         <button
-                                            class="btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">B3</button>
+                                            class="add-btn btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">B3</button>
                                     </div>
                                     <div class="">
                                         <button
-                                            class="btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">B4</button>
+                                            class="add-btn btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">B4</button>
                                     </div>
                                 </div>
                             </div>
@@ -242,21 +245,21 @@
                                         <p>C</p>
                                     </div>
                                     <div class="">
-                                        <button
+                                        <button id="add-btn"
                                             class="btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">C1</button>
                                     </div>
                                     <div class="">
-                                        <button
+                                        <button id="add-btn"
                                             class="btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">C2</button>
                                     </div>
                                 </div>
                                 <div class="flex gap-8">
                                     <div class="">
-                                        <button
+                                        <button id="add-btn"
                                             class="btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">C3</button>
                                     </div>
                                     <div class="">
-                                        <button
+                                        <button id="add-btn"
                                             class="btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">C4</button>
                                     </div>
                                 </div>
@@ -267,21 +270,21 @@
                                         <p>D</p>
                                     </div>
                                     <div class="">
-                                        <button
+                                        <button id="add-btn"
                                             class="btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">D1</button>
                                     </div>
                                     <div class="">
-                                        <button
+                                        <button id="add-btn"
                                             class="btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">D2</button>
                                     </div>
                                 </div>
                                 <div class="flex gap-8">
                                     <div class="">
-                                        <button
+                                        <button id="add-btn"
                                             class="btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">D3</button>
                                     </div>
                                     <div class="">
-                                        <button
+                                        <button id="add-btn"
                                             class="btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">D4</button>
                                     </div>
                                 </div>
@@ -292,21 +295,21 @@
                                         <p>E</p>
                                     </div>
                                     <div class="">
-                                        <button
+                                        <button id="add-btn"
                                             class="btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">E1</button>
                                     </div>
                                     <div class="">
-                                        <button
+                                        <button id="add-btn"
                                             class="btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">E2</button>
                                     </div>
                                 </div>
                                 <div class="flex gap-8">
                                     <div class="">
-                                        <button
+                                        <button id="add-btn"
                                             class="btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">E3</button>
                                     </div>
                                     <div class="">
-                                        <button
+                                        <button id="add-btn"
                                             class="btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">E4</button>
                                     </div>
                                 </div>
@@ -317,21 +320,21 @@
                                         <p>F</p>
                                     </div>
                                     <div class="">
-                                        <button
+                                        <button id="add-btn"
                                             class="btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">F1</button>
                                     </div>
                                     <div class="">
-                                        <button
+                                        <button id="add-btn"
                                             class="btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">F2</button>
                                     </div>
                                 </div>
                                 <div class="flex gap-8">
                                     <div class="">
-                                        <button
+                                        <button id="add-btn"
                                             class="btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">F3</button>
                                     </div>
                                     <div class="">
-                                        <button
+                                        <button id="add-btn"
                                             class="btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">F4</button>
                                     </div>
                                 </div>
@@ -342,21 +345,21 @@
                                         <p>G</p>
                                     </div>
                                     <div class="">
-                                        <button
+                                        <button id="add-btn"
                                             class="btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">G1</button>
                                     </div>
                                     <div class="">
-                                        <button
+                                        <button id="add-btn"
                                             class="btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">G2</button>
                                     </div>
                                 </div>
                                 <div class="flex gap-8 mb-6">
                                     <div class="">
-                                        <button
+                                        <button id="add-btn"
                                             class="btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">G3</button>
                                     </div>
                                     <div class="">
-                                        <button
+                                        <button id="add-btn"
                                             class="btn bg-[#F7F8F8] px-11 rounded-lg text-[#0307127F] text-[18px]">G4</button>
                                     </div>
                                 </div>
@@ -370,10 +373,17 @@
                         <hr class="w-[409px] mx-auto">
                     </div>
 
-                    <div class="bg-[#F7F8F8] w-[433px] h-[390px] mt-6 mx-auto rounded-xl">
-                        <div class="flex gap-28 justify-around pt-8 pb-4">
-                            <div>
-                                <p class="text-[#030712] inter-font font-medium">Seat</p>
+                    <div class="bg-[#F7F8F8] w-[433px] h-[540px] mt-6 mx-auto rounded-xl">
+                        <div class="selected-players flex gap-28 justify-around pt-8 pb-4">
+                            <div class="flex justify-center items-center text-center">
+                                <div>
+                                    <p class="text-[#030712] inter-font font-medium">Seat</p>
+                                </div>
+                                <div class="flex justify-center text-center items-center">
+                                    <h5 id="seat"
+                                        class="bg-[#1DD100] rounded-full w-[23px] h-[18px] text-white inter-font font-bold text-sm">
+                                        0</h5>
+                                </div>
                             </div>
                             <div>
                                 <p class="text-[#030712] inter-font font-medium">Class</p>
@@ -382,36 +392,27 @@
                                 <p class="text-[#030712] inter-font font-medium">Price</p>
                             </div>
                         </div>
+                        
+                        <div class="px-4" id="selected-container"></div>
                         <hr class="w-[409px] mx-auto">
-                        <div class="flex gap-28 justify-around pt-4 pb-4">
-                            <div>
-                                <p class="text-[#03071299] inter-font font-medium">C2</p>
-                            </div>
-                            <div>
-                                <p class="text-[#03071299] inter-font font-medium">Economy</p>
-                            </div>
-                            <div>
-                                <p class="text-[#03071299] inter-font font-medium">550</p>
-                            </div>
-                        </div>
-                        <hr class="w-[409px] mx-auto">
-                        <div class="">
+                        <div>
                             <div class="flex justify-between px-4 pt-4 pb-4">
                                 <div>
                                     <p class="text-[#030712] inter-font font-medium">Total Price</p>
                                 </div>
                                 <div>
-                                    <p class="text-[#030712] inter-font font-medium">BDT 550</p>
+                                    <p class="text-[#030712] inter-font font-medium">BDT <span id="total-cost"> 0</span>
+                                    </p>
                                 </div>
                             </div>
                             <div class="flex justify-center">
                                 <div>
-                                    <input class="w-[369px] p-6 rounded-xl absolute" type="text"
+                                    <input id="coupon-code" class="w-[369px] p-6 rounded-xl absolute" type="text"
                                         placeholder="Have any coupon?">
 
                                 </div>
                                 <div>
-                                    <button
+                                    <button onclick="updateGrandTotal('click from apply')"
                                         class="btn bg-[#1DD100] text-white relative ml-[290px] mt-[12px]">Apply</button>
                                 </div>
                             </div>
@@ -420,32 +421,44 @@
                                     <p class="text-[#030712] inter-font font-medium">Grand Total</p>
                                 </div>
                                 <div>
-                                    <p class="text-[#030712] inter-font font-medium">BDT 550</p>
+                                    <p class="text-[#030712] inter-font font-medium">BDT <span id="grand-total">0</span>
+                                    </p>
                                 </div>
                             </div>
                             <div class="flex justify-center">
-                                <button
+                                <!-- Open the modal using ID.showModal() method -->
+                                <button onclick="Play()"
                                     class="btn w-[409px] bg-[#1DD100] text-white raleway-font font-extrabold text-xl">Next</button>
+                                <dialog id="my_modal_1" class="modal">
+
+                                </dialog>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="w-[718px] mx-auto bg-white mt-20 pt-14">
+            <!-- success -->
+            <section id="success" class="w-[718px] hidden mx-auto bg-white mt-20 pt-14">
                 <div class="text-center">
                     <div class="flex justify-center">
                         <img src="images/success.png" alt="">
                     </div>
-                    <h1 class="mt-6 mb-6 raleway-font text-2xl font-bold text-green-600">SUCCESS</h1>
-                    <p class="raleway-font text-xl font-medium text-[#4A4A4A] w-[561px] mx-auto text-center">Thank you for Booking Our Bus Seats.
+                    <h1 class="mt-6 mb-6 raleway-font text-2xl font-bold text-green-600">SUCCESS
+                    </h1>
+                    <p class="raleway-font text-xl font-medium text-[#4A4A4A] w-[561px] mx-auto text-center">
+                        Thank you
+                        for Booking Our Bus Seats.
                         We are working hard to find the best service and deals for you.
                     </p>
-                    <p class="raleway-font text-xl font-light text-[#4A4A4A] mx-auto text-center">Shortly you will find a confirmation in your email.</p>
-                    <button class="btn rounded-full w-[300px] bg-green-600 text-white mt-5 mb-14">Continue</button>
+                    <p class="raleway-font text-xl font-light text-[#4A4A4A] mx-auto text-center">
+                        Shortly you will find
+                        a confirmation in your email.</p>
+                    <button onclick="cont()"
+                        class="btn rounded-full w-[300px] bg-green-600 text-white mt-5 mb-14">Continue</button>
                 </div>
 
-            </section>
+            </section>s
 
 
         </section>
@@ -481,7 +494,9 @@
             </div>
         </div>
     </footer>
+    <script src="script/utility.js"></script>
     <script src="script/B9-A5.js"></script>
+
 </body>
 
 </html>
